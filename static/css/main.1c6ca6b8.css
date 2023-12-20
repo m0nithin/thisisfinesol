@@ -25,7 +25,8 @@ html {
 }
 
 body {
-    background-color: #1ee4b4
+
+    background-color: #1ee4b4;
 }
 
 a {
@@ -335,7 +336,7 @@ section {
 
 .howStep {
     align-items: center;
-    background-color: #647432;
+    background-color: #9844fe;
     border: 3px solid #795224;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -486,7 +487,7 @@ section {
 }
 
 .tokenomicsTextBox {
-    background-color: #647432;
+    background-color: #9844fe;
     border: 3px solid #795224;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -557,7 +558,7 @@ section {
 
 .roadmapPhasesResume {
     align-items: center;
-    background-color: #647432;
+    background-color: #9844fe;
     border: 3px solid #795224;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -603,7 +604,7 @@ section {
 }
 
 .roadmapItem {
-    background-color: #647432;
+    background-color: #9844fe;
     border: 3px solid #795224;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
