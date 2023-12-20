@@ -1,0 +1,932 @@
+@font-face {
+    font-family: tif;
+    src: url(./assets/fonts/Again.ttf);
+}
+
+@font-face {
+    font-family: comic;
+    src: url(./assets/fonts/ComicNeueSansID.ttf);
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
+
+body {
+    background-color: #ece542;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+section {
+    position: relative;
+}
+
+#hero {
+    width: 100vw !important;
+    height: fit-content !important;
+    margin: 0px !important;
+    padding: 0% !important;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    z-index: 999;
+    padding: 0% 2% 0% 2%;
+    box-shadow: 0px 3px 10px 1px #25180b;
+}
+
+#list {
+    display: none;
+}
+
+.headerLogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerLogo img {
+    width: 70% !important;
+    height: auto;
+    cursor: pointer;
+}
+
+.logoText {
+    font-family: "tif";
+    color: #fff;
+    font-size: 4em;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    white-space: nowrap;
+    font-weight: 900;
+    margin: 0px 2% !important;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2.5%;
+}
+
+.navMenu a {
+    margin-right: 3% !important;
+}
+
+.navMenuItem {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 2.5em;
+    white-space: nowrap;
+}
+
+.navBtn {
+    background-color: #795224;
+    box-shadow: 0px 0px 5px 1px #000;
+    border-radius: 30px !important;
+    width: fit-content;
+    height: fit-content;
+    padding: 1% 5%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navBtn span {
+    font-family: "tif";
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: 900;
+    margin: 0px !important;
+    line-height: 1.5em;
+    white-space: nowrap;
+    text-shadow: 0 0 3px #795224, 0 0 5px #795224;
+}
+
+.heroContent {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5% 10%;
+}
+
+.heroTextWrapper {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.heroTitle {
+    font-family: "tif";
+    color: #fff;
+    font-size: 10rem;
+    font-weight: 700;
+    margin-left: 2%;
+    line-height: 1.5em;
+    white-space: nowrap;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+}
+
+.heroSubtitle {
+    font-family: "comic";
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    width: 70%;
+    margin-left: 2%;
+}
+
+.heroTextIconLinks {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+
+.heroTextIconLinks img {
+    width: 12%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.heroImageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroLinksBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+.heroLinkBtn {
+    width: 30vw;
+    height: fit-content;
+    padding: 2vh 4vw;
+    border: solid 3px #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.heroLinkBtn span {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 3vw;
+    white-space: nowrap;
+    margin-right: 5%;
+}
+
+.fireSeperator {
+    height: 3vh;
+    width: 100vw;
+    background-image: url('../src/assets/images/img/divider.svg');
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-color: #ece542;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+#about {
+    height: fit-content;
+    width: 100%;
+    margin: 0px;
+    padding: 8% 6%;
+    background-color: #ece542;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutImagebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.aboutImagebox img {
+    width: 60%;
+    height: auto;
+}
+
+.aboutTextBox {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutTitle {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 100px;
+    white-space: nowrap;
+    margin-bottom: 5%;
+}
+
+.aboutText {
+    font-family: "comic";
+    color: #fff;
+    text-shadow: 0 0 5px #000, 0 0 5px #000;
+    font-size: 24px;
+    line-height: 1.3em;
+    width: 80%;
+}
+
+#how {
+    height: fit-content;
+    width: 100%;
+    margin: 0px;
+    padding: 5% 6%;
+    background-color: #ece542;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howTitle {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 100px;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.howStep {
+    width: 70vw;
+    height: fit-content;
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #647432;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: solid 3px #795224;
+    box-shadow: 0px 4px 10px 1px #795224;
+    margin-bottom: 4%;
+}
+
+.howStep img {
+    width: 10vw;
+    height: auto;
+}
+
+#how>div:nth-child(4)>img {
+    width: 6vw;
+    height: auto;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#how>div:nth-child(5)>img {
+    filter: invert(1);
+    width: 8vw;
+    height: auto;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.howStepText {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.howStepTitle {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 40px;
+    white-space: nowrap;
+    margin-bottom: 1%;
+}
+
+.howSteptext {
+    font-family: "comic";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.howSwapBox {
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.swapping {
+    width: 50%;
+    height: fit-content;
+}
+
+.swapping iframe {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 60vh;
+}
+
+.swappingImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: fit-content;
+}
+
+.swappingImage img {
+    width: 30vw;
+    height: auto;
+}
+
+#tokenomics {
+    height: fit-content;
+    width: 100%;
+    margin: 0px;
+    padding: 5% 6%;
+    background-color: #ece542;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tokenomicsTitle {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 100px;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.tokenomicsBox {
+    width: 100%;
+    height: fit-content;
+    padding: 2% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tokenomicsTextBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: fit-content;
+    background-color: #647432;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: solid 3px #795224;
+    box-shadow: 0px 4px 10px 1px #795224;
+    padding: 2% 3%;
+}
+
+.tokenomicsTextTitle {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 80px;
+    white-space: nowrap;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.tokenomicsText {
+    font-family: "comic";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.tokenomicsChartBox {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tokenomicsChartBox img {
+    width: 35vw;
+    height: auto;
+}
+
+#roadmap {
+    height: fit-content;
+    width: 100%;
+    margin: 0px;
+    padding: 5% 6%;
+    background-color: #ece542;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roadmapTitle {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 100px;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.roadmapPhasesResume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #647432;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: solid 3px #795224;
+    box-shadow: 0px 4px 10px 1px #795224;
+    padding: 2% 3%;
+    text-align: center;
+    color: #fff;
+    font-family: 'comic';
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 3%;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+}
+
+.roadmapSubtitle {
+    text-align: center;
+    color: #fff;
+    font-family: 'comic';
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+}
+
+.roadmapPhasesBox {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.roadmapItem {
+    background-color: #647432;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: solid 3px #795224;
+    box-shadow: 0px 4px 10px 1px #795224;
+    padding: 2% 3%;
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.roadmapItemTitle {
+    text-align: center;
+    color: #fff;
+    font-family: 'tif';
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+}
+
+.roadmapItemListText {
+    display: list-item;
+    list-style-type: disc;
+    color: #fff;
+    font-family: 'comic';
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    line-height: 1.5em;
+    margin-bottom: 2%;
+}
+
+#contact {
+    height: fit-content;
+    width: 100%;
+    margin: 0px;
+    padding: 5% 0% 0px 0%;
+    background-color: #ece542;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactTitle {
+    font-family: "tif";
+    color: #fff;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-size: 100px;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: fit-content;
+    margin-left: -3vw;
+}
+
+.footerLogo img {
+    width: 30% !important;
+    height: auto;
+    cursor: pointer;
+}
+
+.footerLogo .logoText {
+    font-family: "tif";
+    color: #fff;
+    font-size: 3.3em;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    white-space: nowrap;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footerIcons {
+    width: 25vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.footerText {
+    font-family: "comic";
+    color: #fff;
+    font-size: 2.4em;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    font-weight: 500;
+    text-align: center;
+    width: 60vw;
+    line-height: 1.5em;
+    margin-bottom: 2%;
+}
+
+.footerCopyrights {
+    width: 100%;
+    height: fit-content;
+    padding: 1% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -3px 5px 1px #25180b;
+    margin-top: 3%;
+}
+
+.footerCopyrights h5 {
+    color: #020202;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.logoTextMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .headerLogo {
+        padding-top: 3%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .headerLogo img {
+        width: 25vw !important;
+        max-width: none;
+    }
+    .logoText {
+        display: none;
+    }
+    .logoTextMobile {
+        display: block;
+        font-family: "tif";
+        color: #fff;
+        font-size: 4em;
+        text-shadow: 0 0 3px #000, 0 0 5px #000;
+        white-space: nowrap;
+        font-weight: 900;
+        margin: 0px 2% !important;
+        cursor: pointer;
+    }
+    .navMenuItem {
+        display: none;
+    }
+    .navBtn {
+        padding: 4% 8%;
+        margin-left: 3%;
+    }
+    #list {
+        display: block !important;
+        margin-left: 3vw;
+        margin-right: 1vw;
+    }
+    #hero {
+        padding-bottom: 10% !important;
+    }
+    .heroContent {
+        width: 100%;
+        height: -moz-fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 5%;
+    }
+    .heroTitle {
+        text-align: center;
+    }
+    .heroSubtitle {
+        text-align: center;
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 10vh;
+    }
+    .heroTextIconLinks {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .heroTextIconLinks img {
+        width: 28%;
+        margin-bottom: 5%;
+    }
+    .heroLinksBox {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .heroLinkBtn {
+        margin-bottom: 4%;
+        width: 80vw;
+        border-width: 4px !important;
+    }
+    .heroLinkBtn span {
+        font-size: 4em;
+    }
+    #about {
+        padding: 8% 0%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .aboutTextBox {
+        width: 100%;
+    }
+    .aboutTitle {
+        text-align: center;
+        font-size: 6rem;
+    }
+    .aboutText {
+        text-align: left;
+        word-wrap: break-word;
+        margin-bottom: 8vh;
+    }
+    .aboutImagebox {
+        width: 100%;
+    }
+    #how {
+        padding: 5% 0%;
+    }
+    .howTitle {
+        white-space: break-spaces;
+        text-align: center;
+        width: 100%;
+        font-size: 6rem;
+    }
+    .howStep {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10% !important;
+    }
+    .howStep img {
+        width: 50vw;
+    }
+    .howStepText {
+        align-items: center;
+        justify-content: center;
+    }
+    .howStepText h5 {
+        text-align: center;
+    }
+    .howStepTitle {
+        margin-bottom: 5%;
+    }
+    .howSwapBox {
+        flex-direction: column;
+    }
+    .swapping {
+        width: 100%;
+    }
+    .swappingImage {
+        width: 100%;
+        margin-top: 5vh !important;
+    }
+    .swappingImage img {
+        width: 70vw;
+    }
+    #tokenomics {
+        padding: 5% 0%;
+    }
+    .tokenomicsTitle {
+        width: 70%;
+        white-space: break-spaces;
+        text-align: center;
+        font-size: 6rem;
+    }
+    .tokenomicsBox {
+        flex-direction: column;
+    }
+    .tokenomicsTextBox {
+        width: 95%;
+        padding-bottom: 8%;
+    }
+    .tokenomicsTextTitle {
+        white-space: break-spaces;
+        width: 90%;
+        font-size: 4rem;
+        text-align: center;
+        margin-left: 0px !important;
+    }
+    .tokenomicsChartBox {
+        width: 100%;
+    }
+    .tokenomicsChartBox img {
+        width: 90vw;
+        margin-top: 6vh;
+    }
+    #roadmap {
+        padding: 5% 0%;
+    }
+    .roadmapTitle {
+        font-size: 6rem;
+    }
+    .roadmapPhasesResume {
+        width: 95%;
+        padding: 5% 2%;
+    }
+    .roadmapSubtitle {
+        line-height: 1.5em;
+        width: 80%;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .roadmapPhasesBox {
+        flex-direction: column;
+    }
+    .roadmapItem {
+        width: 95%;
+        padding: 5% 8%;
+        margin-bottom: 5%;
+    }
+    #contact {
+        padding: 5% 0px 0px 0px;
+    }
+    .contactTitle {
+        font-size: 6rem;
+    }
+    .footerLogo {
+        margin-left: 0px !important;
+    }
+    .footerLogo img {
+        width: 80vw !important;
+    }
+    .footerIcons {
+        width: 80vw;
+        margin-bottom: 8%;
+    }
+    .footerText {
+        margin-top: 5%;
+    }
+    .footerCopyrights {
+        padding: 5% 0px;
+        margin-top: 3vh;
+    }
+    .footerCopyrights h5 {
+        font-size: 1.8rem;
+    }
+    .menu-wrap.burger-menu {
+        background-color: #ece542 !important;
+        width: 100vw !important;
+    }
+    .menu-wrap.burger-menu .menu {
+        background-color: #ece542 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-wrap.burger-menu .menu .item-text {
+        font-family: 'tif';
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0 0 3px #000, 0 0 5px #000;
+    }
+    #how>div:nth-child(4)>img {
+        width: 28vw;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    #how>div:nth-child(5)>img {
+        width: 28vw;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    .heroTextWrapper {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
