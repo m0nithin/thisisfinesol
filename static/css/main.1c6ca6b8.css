@@ -108,7 +108,7 @@ section {
     display: none !important;
     visibility: hidden;
     align-items: center;
-    background-color: #795224;
+    background-color: #9844fe;
     border-radius: 30px !important;
     box-shadow: 0 0 5px 1px #000;
     cursor: pointer;
@@ -132,7 +132,7 @@ section {
     font-weight: 900;
     line-height: 1.5em;
     margin: 0 !important;
-    text-shadow: 0 0 3px #795224, 0 0 5px #795224;
+    text-shadow: 0 0 3px #9844fe, 0 0 5px #9844fe;
     white-space: nowrap
 }
 
@@ -337,10 +337,10 @@ section {
 .howStep {
     align-items: center;
     background-color: #9844fe;
-    border: 3px solid #795224;
+    border: 3px solid #9844fe;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: 0 4px 10px 1px #795224;
+    box-shadow: 0 4px 10px 1px #9844fe;
     display: flex;
     flex-direction: row;
     height: -webkit-fit-content;
@@ -488,10 +488,10 @@ section {
 
 .tokenomicsTextBox {
     background-color: #9844fe;
-    border: 3px solid #795224;
+    border: 3px solid #9844fe;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: 0 4px 10px 1px #795224;
+    box-shadow: 0 4px 10px 1px #9844fe;
     flex-direction: column;
     padding: 2% 3%;
     width: 50%
@@ -559,10 +559,10 @@ section {
 .roadmapPhasesResume {
     align-items: center;
     background-color: #9844fe;
-    border: 3px solid #795224;
+    border: 3px solid #9844fe;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: 0 4px 10px 1px #795224;
+    box-shadow: 0 4px 10px 1px #9844fe;
     display: flex;
     flex-direction: column;
     font-size: 2.7rem;
@@ -605,10 +605,10 @@ section {
 
 .roadmapItem {
     background-color: #9844fe;
-    border: 3px solid #795224;
+    border: 3px solid #9844fe;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: 0 4px 10px 1px #795224;
+    box-shadow: 0 4px 10px 1px #9844fe;
     margin-left: 3%;
     margin-right: 3%;
     padding: 2% 3%;
